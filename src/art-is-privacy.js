@@ -109,6 +109,23 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
                 vendorinf += ' </div>';
             break;
 
+            case 'matomo':
+                var checked = AIPrivacy_getCookieValue('AIP_setting_'+vendor) == 1 ? "checked" : '';
+                vendorinf += '<div class="aip_vendor_opt"><input type="checkbox" '+checked+' >';
+                vendorinf +=  artIsPrivacyTranslation[language].vendor_matomo_title.replace(/{name}/, window.artIsPrivacySettings.name);
+                vendorinf +=  artIsPrivacyTranslation[language].vendor_matomo_body.replace(/{name}/, window.artIsPrivacySettings.name); 
+                vendorinf += ' </div>';
+            break;
+
+
+            case 'addthis':
+                var checked = AIPrivacy_getCookieValue('AIP_setting_'+vendor) == 1 ? "checked" : '';
+                vendorinf += '<div class="aip_vendor_opt"><input type="checkbox" '+checked+' >';
+                vendorinf +=  artIsPrivacyTranslation[language].vendor_addthis_title.replace(/{name}/, window.artIsPrivacySettings.name);
+                vendorinf +=  artIsPrivacyTranslation[language].vendor_addthis_body.replace(/{name}/, window.artIsPrivacySettings.name); 
+                vendorinf += ' </div>';
+            break;
+
        }
 
        return vendorinf;
