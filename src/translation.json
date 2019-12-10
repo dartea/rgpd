@@ -3,7 +3,8 @@
 		"title" : "<div class=\"aip_title\">{name} respecte votre vie privée</div>",
 		"body" : "<div class=\"aip_body\">En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de traceurs (cookies) par le site {name}.<br>Ils permettent de réaliser un suivi d'audience et une analyse des comportements pour nous aider à vous proposer une expérience optimisée.<p>En cliquant sur \"J'accepte\", vous acceptez notre <a href=\"{privacyPolicyURL}\">charte cookies</a> et leur dépôt et l'analyse des données que vous avez accepté de nous fournir</p></div>",
 		"linktraceurs" : "<button class=\"aip_linktraceurs\">Paramétrer les traceurs</button>",
-		"acceptall" : "<button class=\"aip_acceptall\">J'accepte</button>"
+		"acceptall" : "<button class=\"aip_acceptall\">J'accepte</button>",
+		"settings_title" : "<div class=\"aip_settingstitle\">Paramétrage des traceurs (cookies) déposés par le site {name} et les services tiers :</div>"
 	},
 
 
@@ -11,6 +12,7 @@
 		"title" : "<div class=\"aip_title\">{name} respect your privacy</div>",
 		"body" : "<div class=\"aip_body\">En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de traceurs (cookies) par le site {name}.<br>Ils permettent de réaliser un suivi d'audience et une analyse des comportements pour nous aider à vous proposer une expérience optimisée.</div>",
 		"linktraceurs" : "<button class=\"aip_linktraceurs\">Cookie settings</button>",
-		"acceptall" : "<button class=\"aip_acceptall\">I agree</button>"
+		"acceptall" : "<button class=\"aip_acceptall\">I agree</button>",
+		"settings_title" : "<div class=\"aip_settingstitle\">Cookie settings for {name} and third-party services :</div>"
 	}
 }

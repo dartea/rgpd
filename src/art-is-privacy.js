@@ -65,17 +65,35 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
         //var AIP_DIV = document.getElementById("AIPrivacy").
         var inflayerContent = '';
         //inflayerContent += ;
-        inflayerContent += artIsPrivacyTranslation[language].title.replace(/{name}/, window.artIsPrivacySettings.name); 
-        inflayerContent += artIsPrivacyTranslation[language].body.replace(/{name}/, window.artIsPrivacySettings.name).replace(/{privacyPolicyURL}/, window.artIsPrivacySettings.privacyPolicyURL);  
+        inflayerContent += artIsPrivacyTranslation[language].settings_title.replace(/{name}/, window.artIsPrivacySettings.name); 
+        //inflayerContent += artIsPrivacyTranslation[language].body.replace(/{name}/, window.artIsPrivacySettings.name).replace(/{privacyPolicyURL}/, window.artIsPrivacySettings.privacyPolicyURL);  
         
 
         inflayerContent += '<div class="aip_vendors">';
-
+        for (var vendor in  window.artIsPrivacySettings.vendors) {
+         inflayerContent += AIPrivacy_getVendor(vendor);
+        }
         inflayerContent +='</div>';
         document.getElementById("AIPrivacy_wrapper").innerHTML = inflayerContent;
     }
 
-     // --------
+
+    // --------
+    // Get vendor option
+    // --------
+    function AIPrivacy_getVendor(vendor){
+        var vendorinf = '';
+       switch(vendor){
+            default: 
+
+            break;
+
+       }
+
+       return vendorinf = '';
+    }
+
+
     // Auto  déclanchement
     // --------
     // affichage conditionelle si consentement all ou pas

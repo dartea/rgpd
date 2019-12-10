@@ -10,7 +10,7 @@
   </head>
   <body>
     <h1>Art is privacy</h1>
-    
+
     <a href="#" class="aip_linkcookie" >Paramétrer les cookies</a>
    
 
@@ -22,7 +22,7 @@
         language : 'fr',
         privacyPolicyURL : 'http://www.dartea.com',
         position: 'bottom',
-        vendors:['site','ganalytics','matomo','addthis','disquss','facebook'],
+        vendors:['necessary','ganalytics','matomo','addthis','disqus','facebook','twitter','instagram'],
         theme : {}  
     };
   </script>
