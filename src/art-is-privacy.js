@@ -184,7 +184,8 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
             }
             
         }
-        document.getElementById("AIPrivacy").setAttribute("class", "display_none");
+        AIPrivacy_hideInfos();
+        //document.getElementById("AIPrivacy").setAttribute("class", "display_none");
 
     }
 

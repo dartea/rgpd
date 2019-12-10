@@ -27,7 +27,7 @@
         logoUrl : '',
         language : 'fr',
         privacyPolicyURL : 'http://www....',
-        position: 'bottom',
+        position: 'middle',//middle ou bottom
         vendors:['necessary','googleanalytics','matomo','addthis','sharethis','disqus','facebook'], 
         /*
          'necessary': cookie du site pour compte utilisateurs/ embed vidéos ou autre
