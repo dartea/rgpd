@@ -71,4 +71,32 @@
 		}
 	}
 
+	///aip_settings
+	.aip_vendor_opt{
+		padding-left:30px;
+		margin:20px 0;
+		input{
+			margin-left:-30px;
+				
+		}
+		.aip_vendor_title{
+			font-weight:bold;
+			display: inline-block;
+    		padding-left: 15px;
+		}
+	}
+
+
+	#aip_saveCookieSettings{
+		
+		margin:10px auto;
+		text-align:center;
+		display:block;
+		border:1px solid #333;
+		padding:10px;
+		font-size:1.2em;
+		font-weight:bold;
+		text-transform:uppercase;
+		cursor:pointer;
+	}
 }

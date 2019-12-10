@@ -5,8 +5,11 @@
 		"linktraceurs" : "<button class=\"aip_linktraceurs\">Paramétrer les traceurs</button>",
 		"acceptall" : "<button class=\"aip_acceptall\">J'accepte</button>",
 		"settings_title" : "<div class=\"aip_settingstitle\">Paramétrage des traceurs (cookies) déposés par le site {name} et les services tiers :</div>",
-		"vendor_necessary_title" : "Traceurs nécessaires au fonctionnement du site :",
-		"vendor_necessary_body" : "<div class=\"aip_vendor_body\">Le site {name} dépose un cookie de session nécessaire au fonctionnement et à la sécurité du site.<br>Les players vidéos des services tiers tel que Youtube, Vimeo, Dailymotion utilisés dans ce site, enregistrent des traceurs necessaires au visionage des vidéos sur leurs serveurs.<br>Vous pouvez consulter la politique de protection des données sur leur sites internet</div>"
+		"vendor_necessary_title" : "<div class=\"aip_vendor_title\">Traceurs nécessaires au fonctionnement du site :</div>",
+		"vendor_necessary_body" : "<div class=\"aip_vendor_body\">Le site {name} dépose un cookie de session nécessaire au fonctionnement et à la sécurité du site.<br>Les players vidéos des services tiers tel que Youtube, Vimeo, Dailymotion utilisés dans ce site, enregistrent des traceurs necessaires au visionage des vidéos sur leurs serveurs.<br>Vous pouvez consulter la politique de protection des données sur leur sites internet</div>",
+		"vendor_googleanalytics_title" : "<div class=\"aip_vendor_title\">Suivi de l'audience par Google analytics :</div>",
+		"vendor_googleanalytics_body" : "<div class=\"aip_vendor_body\">Le site {name} utilise le service Google Analytics pour suivre l'audience afin de nous aider à analyser les comportements des visiteurs, les sources de trafic et la popularité des contenus proposés.</div>",
+		"savesettings" : "Enregistrer"
 	},
 
 
