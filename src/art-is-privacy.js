@@ -12,6 +12,8 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     var language = typeof(artIsPrivacyTranslation[window.artIsPrivacySettings.language])!="undefined" ? window.artIsPrivacySettings.language : 'fr';
     //define position [middle || bottom]
     var position = typeof(window.artIsPrivacySettings.position)!="undefined" && (window.artIsPrivacySettings.position=='middle'  || window.artIsPrivacySettings.position=='bottom') ? window.artIsPrivacySettings.position : 'middle';
+    //defini la class du lien des settings
+    var classLinkSettings = typeof(window.artIsPrivacySettings.classLinkSettings)!="undefined" && window.artIsPrivacySettings.classLinkSettings!='' ? window.artIsPrivacySettings.classLinkSettings  : 'aip_linkcookie';
 
     var dureeConsemntement = 0; //3 mois maximum (https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi)
     // --------
@@ -131,7 +133,7 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     }
 
     //lien dans la page pour parametrer les cookie
-    var LienSettings = document.getElementsByClassName( 'aip_linkcookie' )[0];
+    var LienSettings = document.getElementsByClassName( classLinkSettings )[0];
     if(typeof(LienSettings)!='undefined'){
         LienSettings.onclick = function() { 
             AIPrivacy_showCookieSettings();

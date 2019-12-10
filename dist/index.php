@@ -23,6 +23,7 @@
         privacyPolicyURL : 'http://www.dartea.com',
         position: 'bottom',
         vendors:['necessary','ganalytics','matomo','addthis','disqus','facebook','twitter','instagram'],
+        classLinkSettings : 'aip_linkcookie',
         theme : {}  
     };
   </script>
