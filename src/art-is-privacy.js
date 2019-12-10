@@ -97,7 +97,7 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
                 vendorinf += '<div class="aip_vendor_opt"><input type="checkbox" checked="" disabled="">';
                 vendorinf +=  artIsPrivacyTranslation[language].vendor_necessary_title.replace(/{name}/, window.artIsPrivacySettings.name);
                 vendorinf +=  artIsPrivacyTranslation[language].vendor_necessary_body.replace(/{name}/, window.artIsPrivacySettings.name); 
-                vendorinf += ' </div>';
+                vendorinf += '</div>';
             break;
 
 
@@ -106,7 +106,7 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
                 vendorinf += '<div class="aip_vendor_opt"><input type="checkbox" '+checked+' >';
                 vendorinf +=  artIsPrivacyTranslation[language].vendor_googleanalytics_title.replace(/{name}/, window.artIsPrivacySettings.name);
                 vendorinf +=  artIsPrivacyTranslation[language].vendor_googleanalytics_body.replace(/{name}/, window.artIsPrivacySettings.name); 
-                vendorinf += ' </div>';
+                vendorinf += '</div>';
             break;
 
             case 'matomo':
@@ -114,7 +114,7 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
                 vendorinf += '<div class="aip_vendor_opt"><input type="checkbox" '+checked+' >';
                 vendorinf +=  artIsPrivacyTranslation[language].vendor_matomo_title.replace(/{name}/, window.artIsPrivacySettings.name);
                 vendorinf +=  artIsPrivacyTranslation[language].vendor_matomo_body.replace(/{name}/, window.artIsPrivacySettings.name); 
-                vendorinf += ' </div>';
+                vendorinf += '</div>';
             break;
 
 
@@ -123,7 +123,24 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
                 vendorinf += '<div class="aip_vendor_opt"><input type="checkbox" '+checked+' >';
                 vendorinf +=  artIsPrivacyTranslation[language].vendor_addthis_title.replace(/{name}/, window.artIsPrivacySettings.name);
                 vendorinf +=  artIsPrivacyTranslation[language].vendor_addthis_body.replace(/{name}/, window.artIsPrivacySettings.name); 
-                vendorinf += ' </div>';
+                vendorinf += '</div>';
+            break;
+
+            case 'sharethis':
+                var checked = AIPrivacy_getCookieValue('AIP_setting_'+vendor) == 1 ? "checked" : '';
+                vendorinf += '<div class="aip_vendor_opt"><input type="checkbox" '+checked+' >';
+                vendorinf +=  artIsPrivacyTranslation[language].vendor_sharethis_title.replace(/{name}/, window.artIsPrivacySettings.name);
+                vendorinf +=  artIsPrivacyTranslation[language].vendor_sharethis_body.replace(/{name}/, window.artIsPrivacySettings.name); 
+                vendorinf += '</div>';
+            break;
+
+
+            case 'disqus':
+                var checked = AIPrivacy_getCookieValue('AIP_setting_'+vendor) == 1 ? "checked" : '';
+                vendorinf += '<div class="aip_vendor_opt"><input type="checkbox" '+checked+' >';
+                vendorinf +=  artIsPrivacyTranslation[language].vendor_disqus_title.replace(/{name}/, window.artIsPrivacySettings.name);
+                vendorinf +=  artIsPrivacyTranslation[language].vendor_disqus_body.replace(/{name}/, window.artIsPrivacySettings.name); 
+                vendorinf += '</div>';
             break;
 
        }

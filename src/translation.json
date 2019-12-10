@@ -17,6 +17,12 @@
 		"vendor_addthis_title" : "<div class=\"aip_vendor_title\">Partage sur les réseaux sociaux </div>",
 		"vendor_addthis_body" : "<div class=\"aip_vendor_body\">le site {name} utilise le service AddThis pour afficher sur certaines pages du site des boutons de partage sur les réseaux sociaux. AddThis utilise des traceurs pour mesurer le nombre de partages des contenus.</div>",
 		
+		"vendor_sharethis_title" : "<div class=\"aip_vendor_title\">Partage sur les réseaux sociaux </div>",
+		"vendor_sharethis_body" : "<div class=\"aip_vendor_body\">le site {name} utilise le service ShareThis pour afficher sur certaines pages du site des boutons de partage sur les réseaux sociaux. ShareThis utilise des traceurs pour mesurer le nombre de partages des contenus.</div>",
+		
+		"vendor_disqus_title" : "<div class=\"aip_vendor_title\">Commentaires sur le site  </div>",
+		"vendor_disqus_body" : "<div class=\"aip_vendor_body\">le site {name} utilise le service Disqus pour les commentiares sur certains page du site. </div>",
+		
 
 		"savesettings" : "Enregistrer"
 	},
@@ -27,6 +33,27 @@
 		"body" : "<div class=\"aip_body\">En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de traceurs (cookies) par le site {name}.<br>Ils permettent de réaliser un suivi d'audience et une analyse des comportements pour nous aider à vous proposer une expérience optimisée.</div>",
 		"linktraceurs" : "<button class=\"aip_linktraceurs\">Cookie settings</button>",
 		"acceptall" : "<button class=\"aip_acceptall\">I agree</button>",
-		"settings_title" : "<div class=\"aip_settingstitle\">Cookie settings for {name} and third-party services :</div>"
+		"settings_title" : "<div class=\"aip_settingstitle\">Cookie settings for {name} and third-party services :</div>",
+	
+		"vendor_necessary_title" : "<div class=\"aip_vendor_title\">Traceurs nécessaires au fonctionnement du site :</div>",
+		"vendor_necessary_body" : "<div class=\"aip_vendor_body\">Le site {name} dépose un cookie de session nécessaire au fonctionnement et à la sécurité du site.<br>Les players vidéos des services tiers tel que Youtube, Vimeo, Dailymotion utilisés dans ce site, enregistrent des traceurs necessaires au visionage des vidéos sur leurs serveurs.<br>Vous pouvez consulter la politique de protection des données sur leur sites internet</div>",
+		
+		"vendor_googleanalytics_title" : "<div class=\"aip_vendor_title\">Suivi de l'audience par Google analytics :</div>",
+		"vendor_googleanalytics_body" : "<div class=\"aip_vendor_body\">Le site {name} utilise le service Google Analytics pour suivre l'audience afin de nous aider à analyser les comportements des visiteurs, les sources de trafic et la popularité des contenus proposés.</div>",
+		
+		"vendor_matomo_title" : "<div class=\"aip_vendor_title\">Suivi de l'audience par Matomo :</div>",
+		"vendor_matomo_body" : "<div class=\"aip_vendor_body\">Le site {name} utilise le service Matomo pour suivre l'audience afin de nous aider à analyser les comportements des visiteurs, les sources de trafic et la popularité des contenus proposés.</div>",
+		
+		"vendor_addthis_title" : "<div class=\"aip_vendor_title\">Partage sur les réseaux sociaux </div>",
+		"vendor_addthis_body" : "<div class=\"aip_vendor_body\">le site {name} utilise le service AddThis pour afficher sur certaines pages du site des boutons de partage sur les réseaux sociaux. AddThis utilise des traceurs pour mesurer le nombre de partages des contenus.</div>",
+		
+		"vendor_sharethis_title" : "<div class=\"aip_vendor_title\">Partage sur les réseaux sociaux </div>",
+		"vendor_sharethis_body" : "<div class=\"aip_vendor_body\">le site {name} utilise le service ShareThis pour afficher sur certaines pages du site des boutons de partage sur les réseaux sociaux. ShareThis utilise des traceurs pour mesurer le nombre de partages des contenus.</div>",
+		
+		"vendor_disqus_title" : "<div class=\"aip_vendor_title\">Commentaires sur le site  </div>",
+		"vendor_disqus_body" : "<div class=\"aip_vendor_body\">le site {name} utilise le service Disqus pour les commentiares sur certains page du site. </div>",
+		
+
+		"savesettings" : "Save"
 	}
 }

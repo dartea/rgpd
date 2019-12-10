@@ -26,7 +26,7 @@
         language : 'fr',
         privacyPolicyURL : 'http://www.dartea.com',
         position: 'bottom',
-        vendors:['necessary','googleanalytics','matomo','addthis','disqus','facebook','twitter','instagram'],
+        vendors:['necessary','googleanalytics','matomo','addthis','sharethis','disqus'],
         classLinkSettings : 'aip_linkcookie',
         theme : {}  
     };
