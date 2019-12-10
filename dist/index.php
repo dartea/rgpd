@@ -14,11 +14,12 @@
    
    <script type="text/javascript">
     window.artIsPrivacySettings = {
-      app: {
-        //apiKey: '<Your API key>',
-        css: null,
-        vendors: {}
-      }
+        name : 'Art is privacy',
+        logoUrl : '',
+        language : 'fr',
+        privacyPolicyURL : '',
+        vendors: {},
+        theme : {},
     };
   </script>
   <script src="/art-is-privacy.min.js" ></script>
