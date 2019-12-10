@@ -53,7 +53,7 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     // --------
     // Remove layer d'infos
     // --------
-    function AIPrivacy_hideInfos(){
+    function AIPrivacy_Close(){
         //create cookie 
         AIPrivacy_setCookieValue("AIP_acceptall",1);
         document.getElementById("AIPrivacy").setAttribute("class", "display_none");
@@ -184,7 +184,7 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
             }
             
         }
-        AIPrivacy_hideInfos();
+        AIPrivacy_Close();
         //document.getElementById("AIPrivacy").setAttribute("class", "display_none");
 
     }
@@ -213,7 +213,7 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     var BtAcceptAll = document.getElementById('AIPrivacy').getElementsByClassName( 'aip_acceptall' )[0];
     if(typeof(BtAcceptAll)!='undefined'){
         BtAcceptAll.onclick = function() { 
-            AIPrivacy_hideInfos();
+            AIPrivacy_Close();
         };
     }
 
