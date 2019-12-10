@@ -70,8 +70,9 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
         
 
         inflayerContent += '<div class="aip_vendors">';
-        for (var vendor in  window.artIsPrivacySettings.vendors) {
-         inflayerContent += AIPrivacy_getVendor(vendor);
+        var vendors = window.artIsPrivacySettings.vendors;
+        for(var i=0;i<vendors.length;i++) {
+         inflayerContent += AIPrivacy_getVendor(vendors[i]);
         }
         inflayerContent +='</div>';
         document.getElementById("AIPrivacy_wrapper").innerHTML = inflayerContent;
@@ -82,15 +83,21 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     // Get vendor option
     // --------
     function AIPrivacy_getVendor(vendor){
-        var vendorinf = '';
+       var vendorinf = '';
+       console.log(vendor);
        switch(vendor){
             default: 
 
             break;
 
+            case 'necessary':
+               vendorinf +=  artIsPrivacyTranslation[language].vendor_necessary_title.replace(/{name}/, window.artIsPrivacySettings.name);
+               vendorinf +=  artIsPrivacyTranslation[language].vendor_necessary_body.replace(/{name}/, window.artIsPrivacySettings.name); 
+            break;
+
        }
 
-       return vendorinf = '';
+       return vendorinf;
     }
 
 

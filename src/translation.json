@@ -4,7 +4,9 @@
 		"body" : "<div class=\"aip_body\">En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de traceurs (cookies) par le site {name}.<br>Ils permettent de réaliser un suivi d'audience et une analyse des comportements pour nous aider à vous proposer une expérience optimisée.<p>En cliquant sur \"J'accepte\", vous acceptez notre <a href=\"{privacyPolicyURL}\">charte cookies</a> et leur dépôt et l'analyse des données que vous avez accepté de nous fournir</p></div>",
 		"linktraceurs" : "<button class=\"aip_linktraceurs\">Paramétrer les traceurs</button>",
 		"acceptall" : "<button class=\"aip_acceptall\">J'accepte</button>",
-		"settings_title" : "<div class=\"aip_settingstitle\">Paramétrage des traceurs (cookies) déposés par le site {name} et les services tiers :</div>"
+		"settings_title" : "<div class=\"aip_settingstitle\">Paramétrage des traceurs (cookies) déposés par le site {name} et les services tiers :</div>",
+		"vendor_necessary_title" : "Traceurs nécessaires au fonctionnement du site :",
+		"vendor_necessary_body" : "<div class=\"aip_vendor_body\">Le site {name} dépose un cookie de session nécessaire au fonctionnement et à la sécurité du site.<br>Les players vidéos des services tiers tel que Youtube, Vimeo, Dailymotion utilisés dans ce site, enregistrent des traceurs necessaires au visionage des vidéos sur leurs serveurs.<br>Vous pouvez consulter la politique de protection des données sur leur sites internet</div>"
 	},
 
 
