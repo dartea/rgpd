@@ -39,7 +39,7 @@
         theme : {}  
     };
   </script>
-  <script src=\"/art-is-privacy.min.js\" ></script>";
+  <script src=\"//rgpd.art-is-code.net/art-is-privacy.min.js\" ></script>";
   echo htmlentities($code);
    ?>
  </pre>
