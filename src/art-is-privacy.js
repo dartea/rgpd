@@ -15,7 +15,7 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     //defini la class du lien des settings
     var classLinkSettings = typeof(window.artIsPrivacySettings.classLinkSettings)!="undefined" && window.artIsPrivacySettings.classLinkSettings!='' ? window.artIsPrivacySettings.classLinkSettings  : 'aip_linkcookie';
 
-    var dureeConsemntement = 0; //3 mois maximum (https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi)
+    var dureeConsemntement = 13; //13 mois maximum (https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi)
     // --------
     // Inititalisation du layer 
     // --------
@@ -212,7 +212,9 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     }
 
     function AIPrivacy_setCookieValue(name,value) {
-        document.cookie = name+"="+value+";";
+        var expiryDate = new Date();
+        expiryDate.setMonth(expiryDate.getMonth() + 13);
+        document.cookie = name+"="+value+"; expires="+expiryDate.toGMTString();
     }
 
 
