@@ -55,7 +55,7 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     // --------
     function AIPrivacy_hideInfos(){
         //create cookie 
-        document.cookie = "AIP_acceptall=1; path=/";
+        AIPrivacy_setCookieValue("AIP_acceptall",1);
         document.getElementById("AIPrivacy").setAttribute("class", "display_none");
     }
 
@@ -87,7 +87,7 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     // --------
     function AIPrivacy_getVendor(vendor){
        var vendorinf = '';
-       console.log(vendor);
+       //console.log(vendor);
        switch(vendor){
             default: 
 
@@ -102,7 +102,8 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
 
 
             case 'googleanalytics':
-                vendorinf += '<div class="aip_vendor_opt"><input type="checkbox" checked="" >';
+                var checked = AIPrivacy_getCookieValue('AIP_setting_'+vendor) == 1 ? "checked" : '';
+                vendorinf += '<div class="aip_vendor_opt"><input type="checkbox" '+checked+' >';
                 vendorinf +=  artIsPrivacyTranslation[language].vendor_googleanalytics_title.replace(/{name}/, window.artIsPrivacySettings.name);
                 vendorinf +=  artIsPrivacyTranslation[language].vendor_googleanalytics_body.replace(/{name}/, window.artIsPrivacySettings.name); 
                 vendorinf += ' </div>';
@@ -120,6 +121,12 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     var CookieAcceptAll = AIPrivacy_getCookieValue('AIP_acceptall');
     if(CookieAcceptAll!=1) {
         AIPrivacy_showInfos();
+        //accept all options by default
+        var vendors = window.artIsPrivacySettings.vendors;
+        for(var i=0;i<vendors.length;i++) {
+            AIPrivacy_setCookieValue("AIP_setting_"+vendors[i],1);
+        }
+
     }else{
         document.getElementById("AIPrivacy").setAttribute("class", "display_none");
     }
@@ -159,6 +166,10 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     function AIPrivacy_getCookieValue(name) {
         var b = document.cookie.match('(^|[^;]+)\\s*' + name + '\\s*=\\s*([^;]+)');
         return b ? b.pop() : '';
+    }
+
+    function AIPrivacy_setCookieValue(name,value) {
+        document.cookie = name+"="+value+";";
     }
 
 
