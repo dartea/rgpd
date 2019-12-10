@@ -14,6 +14,10 @@
     <a href="#" class="aip_linkcookie" >Paramétrer les cookies</a>
    
 
+    <?php if($_COOKIE['AIP_setting_googleanalytics']==1 || !$_COOKIE['AIP_setting_googleanalytics']): ?>
+        //ici le code Google analytics
+    <?php endif; ?>
+
    <?php //var_dump($_COOKIE["AIP_acceptall"]); ?>
    <script type="text/javascript">
     window.artIsPrivacySettings = {
