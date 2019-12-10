@@ -5,6 +5,7 @@
 	align-items: center;
  	justify-content: center;
 	z-index:9999;
+	font-family:Arial;
 
 	#AIPrivacy_wrapper{
 		background-color:#FFF;
@@ -36,18 +37,30 @@
 	//infos layer contenu
 	.aip_title{
 		font-size:1.2em;
+		text-align:center;
+		margin-bottom:10px;
+		font-weight:bold;
 	}
-	.aip_acceptall{
-		border:1px solid #333;
-		padding:10px;
-		font-size:1.5em;
-		margin: 10px;
 
-	}
-	.aip_linktraceurs{
-		border:none;
-		cursor:pointer;
-		
+	.aip_buttons{
+		margin: 10px;
+		text-align:center;
+		display:flex;
+		justify-content: space-between;
+		.aip_acceptall{
+			border:1px solid #333;
+			padding:10px;
+			font-size:1.2em;
+			font-weight:bold;
+			text-transform:uppercase;
+			cursor:pointer;
+
+		}
+		.aip_linktraceurs{
+			border:none;
+			cursor:pointer;
+			
+		}
 	}
 
 }

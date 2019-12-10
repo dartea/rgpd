@@ -30,8 +30,11 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     //inflayerContent += ;
     inflayerContent += artIsPrivacyTranslation[language].title.replace(/{name}/, window.artIsPrivacySettings.name); 
     inflayerContent += artIsPrivacyTranslation[language].body.replace(/{name}/, window.artIsPrivacySettings.name).replace(/{privacyPolicyURL}/, window.artIsPrivacySettings.privacyPolicyURL);
+    
+    inflayerContent += '<div class="aip_buttons">';
     inflayerContent += artIsPrivacyTranslation[language].linktraceurs;
     inflayerContent += artIsPrivacyTranslation[language].acceptall;
+    inflayerContent += '</div>';
 
     document.getElementById("AIPrivacy_wrapper").innerHTML = inflayerContent;
 
