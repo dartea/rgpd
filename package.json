@@ -1,0 +1,34 @@
+{
+  "name": "art-is-privacy",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@projets.artiscode.net:dartea/privacy.git"
+  },
+  "keywords": [
+    "rgpd",
+    "privacy"
+  ],
+  "author": "Andrea D'Agostino ART IS CODE",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^9.7.3",
+    "css-loader": "^3.3.0",
+    "node-sass": "^4.13.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.29.6"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.0"
+  }
+}
