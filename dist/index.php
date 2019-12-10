@@ -14,6 +14,8 @@
     <a href="#" class="aip_linkcookie" >Paramétrer les cookies</a>
    
 
+
+    <!-- detect si le service est accepté -->
     <?php if($_COOKIE['AIP_setting_googleanalytics']==1 || !$_COOKIE['AIP_setting_googleanalytics']): ?>
         //ici le code Google analytics
     <?php endif; ?>
@@ -24,9 +26,18 @@
         name : 'Art is privacy',
         logoUrl : '',
         language : 'fr',
-        privacyPolicyURL : 'http://www.dartea.com',
+        privacyPolicyURL : 'http://www....',
         position: 'bottom',
-        vendors:['necessary','googleanalytics','matomo','addthis','sharethis','disqus'],
+        vendors:['necessary','googleanalytics','matomo','addthis','sharethis','disqus','facebook'], 
+        /*
+         'necessary': cookie du site pour compte utilisateurs/ embed vidéos ou autre
+         'googleanalytics': stats
+         'matomo' : stats
+          'addthis': partage
+          'sharethis': partage
+          'disqus' :commentaire
+          facebook : facebook pixel et autre...
+         */
         classLinkSettings : 'aip_linkcookie',
         theme : {}  
     };

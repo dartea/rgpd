@@ -143,6 +143,15 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
                 vendorinf += '</div>';
             break;
 
+
+            case 'facebook':
+                var checked = AIPrivacy_getCookieValue('AIP_setting_'+vendor) == 1 ? "checked" : '';
+                vendorinf += '<div class="aip_vendor_opt"><input type="checkbox" '+checked+' >';
+                vendorinf +=  artIsPrivacyTranslation[language].vendor_facebook_title.replace(/{name}/, window.artIsPrivacySettings.name);
+                vendorinf +=  artIsPrivacyTranslation[language].vendor_facebook_body.replace(/{name}/, window.artIsPrivacySettings.name); 
+                vendorinf += '</div>';
+            break;
+
        }
 
        return vendorinf;

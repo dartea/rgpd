@@ -7,10 +7,13 @@
 	z-index:9999;
 	font-family:Arial;
 
+
 	#AIPrivacy_wrapper{
 		background-color:#FFF;
 		padding:30px;	
 		position:relative;
+		max-height:90%;
+	overflow-y:auto;
 	}
 	&.display_none{
 		display:none;

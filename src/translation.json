@@ -23,6 +23,9 @@
 		"vendor_disqus_title" : "<div class=\"aip_vendor_title\">Commentaires sur le site  </div>",
 		"vendor_disqus_body" : "<div class=\"aip_vendor_body\">le site {name} utilise le service Disqus pour les commentiares sur certains page du site. </div>",
 		
+		"vendor_facebook_title" : "<div class=\"aip_vendor_title\">Campagnes de sponsorisation et partage sur Facebook  </div>",
+		"vendor_facebook_body" : "<div class=\"aip_vendor_body\">le site {name} utilise le service Facebook pour ses campagnes de sponsorisation et le partage du contenu. </div>",
+		
 
 		"savesettings" : "Enregistrer"
 	},
@@ -52,6 +55,10 @@
 		
 		"vendor_disqus_title" : "<div class=\"aip_vendor_title\">Commentaires sur le site  </div>",
 		"vendor_disqus_body" : "<div class=\"aip_vendor_body\">le site {name} utilise le service Disqus pour les commentiares sur certains page du site. </div>",
+		
+
+		"vendor_facebook_title" : "<div class=\"aip_vendor_title\">Campagnes de sponsorisation et partage sur Facebook  </div>",
+		"vendor_facebook_body" : "<div class=\"aip_vendor_body\">le site {name} utilise le service Facebook pour ses campagne de sponsorisation et le partage du contenu. </div>",
 		
 
 		"savesettings" : "Save"
