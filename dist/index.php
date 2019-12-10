@@ -35,7 +35,7 @@
           'disqus' :commentaire
           facebook : facebook pixel et autre...
          */
-        classLinkSettings : 'aip_linkcookie',
+        classLinkSettings : 'aip_linkcookie',//class du lien pour ouvrire les parametres des cookies
         theme : {}  
     };
   </script>
@@ -77,7 +77,7 @@ endif
           'disqus' :commentaire
           facebook : facebook pixel et autre...
          */
-        classLinkSettings : 'aip_linkcookie',
+        classLinkSettings : 'aip_linkcookie', //class du lien pour ouvrire les parametres des cookies
         theme : {}  
     };
   </script>
