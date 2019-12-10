@@ -1,11 +1,14 @@
 {
 	"fr" : {
-		"title" : "{name} respecte votre vie privée"
-
+		"title" : "<div class=\"aip_title\">{name} respecte votre vie privée</div>",
+		"body" : "<div class=\"aip_body\">En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de traceurs (cookies) par le site {name}.<br>Ils permettent de réaliser un suivi d'audience et une analyse des comportements pour nous aider à vous proposer une expérience optimisée.</div>",
+		"acceptall" : "<button>J'accepte</button>"
 	},
 
 
 	"en" : {
-		"title" : "{name} respect your privacy"
+		"title" : "<div class=\"aip_title\">{name} respect your privacy</div>",
+		"body" : "<div class=\"aip_body\">En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de traceurs (cookies) par le site {name}.<br>Ils permettent de réaliser un suivi d'audience et une analyse des comportements pour nous aider à vous proposer une expérience optimisée.</div>",
+		"acceptall" : "<button>I agree</button>"
 	}
 }

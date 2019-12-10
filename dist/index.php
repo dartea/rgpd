@@ -20,6 +20,7 @@
         privacyPolicyURL : '',
         vendors: {},
         theme : {},
+        position: 'middle'
     };
   </script>
   <script src="/art-is-privacy.min.js" ></script>

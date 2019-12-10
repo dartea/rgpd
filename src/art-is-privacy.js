@@ -8,14 +8,15 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     
     //define language
     var language = typeof(artIsPrivacyTranslation[window.artIsPrivacySettings.language])!="undefined" ? window.artIsPrivacySettings.language : 'fr';
-    
+    //define position [middle || bottom]
+    var position = typeof(window.artIsPrivacySettings.position)!="undefined" && (window.artIsPrivacySettings.position=='middle'  || window.artIsPrivacySettings.position=='bottom') ? window.artIsPrivacySettings.position : 'middle';
 
     // --------
     // Affichage du layer d'infos
     // --------
     var inflayer = document.createElement('div');
     inflayer.setAttribute("id", "AIPrivacy");
-    inflayer.setAttribute("class", "display_midlle");
+    inflayer.setAttribute("class", "display_"+position);
     document.body.appendChild(inflayer);
 
     //wrapper Layer infos
@@ -28,6 +29,8 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     var inflayerContent = '';
     //inflayerContent += ;
     inflayerContent += artIsPrivacyTranslation[language].title.replace(/{name}/, window.artIsPrivacySettings.name); 
+    inflayerContent += artIsPrivacyTranslation[language].body.replace(/{name}/, window.artIsPrivacySettings.name); 
+    inflayerContent += artIsPrivacyTranslation[language].acceptall;
 
     document.getElementById("AIPrivacy_wrapper").innerHTML = inflayerContent;
 
