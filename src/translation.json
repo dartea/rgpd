@@ -10,7 +10,7 @@
 	"en" : {
 		"title" : "<div class=\"aip_title\">{name} respect your privacy</div>",
 		"body" : "<div class=\"aip_body\">En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de traceurs (cookies) par le site {name}.<br>Ils permettent de réaliser un suivi d'audience et une analyse des comportements pour nous aider à vous proposer une expérience optimisée.</div>",
-		"linktraceurs" : "<button class=\"aip_linktraceurs\">Paramétrer les traceurs</button>",
+		"linktraceurs" : "<button class=\"aip_linktraceurs\">Cookie settings</button>",
 		"acceptall" : "<button class=\"aip_acceptall\">I agree</button>"
 	}
 }

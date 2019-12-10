@@ -18,9 +18,10 @@
         logoUrl : '',
         language : 'fr',
         privacyPolicyURL : 'http://www.dartea.com',
+        position: 'middle',
         vendors: {},
-        theme : {},
-        position: 'middle'
+        theme : {}
+        
     };
   </script>
   <script src="/art-is-privacy.min.js" ></script>
