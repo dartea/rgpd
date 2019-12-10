@@ -29,7 +29,8 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     var inflayerContent = '';
     //inflayerContent += ;
     inflayerContent += artIsPrivacyTranslation[language].title.replace(/{name}/, window.artIsPrivacySettings.name); 
-    inflayerContent += artIsPrivacyTranslation[language].body.replace(/{name}/, window.artIsPrivacySettings.name); 
+    inflayerContent += artIsPrivacyTranslation[language].body.replace(/{name}/, window.artIsPrivacySettings.name).replace(/{privacyPolicyURL}/, window.artIsPrivacySettings.privacyPolicyURL);
+    inflayerContent += artIsPrivacyTranslation[language].linktraceurs;
     inflayerContent += artIsPrivacyTranslation[language].acceptall;
 
     document.getElementById("AIPrivacy_wrapper").innerHTML = inflayerContent;

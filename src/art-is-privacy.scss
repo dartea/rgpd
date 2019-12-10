@@ -9,6 +9,7 @@
 	#AIPrivacy_wrapper{
 		background-color:#FFF;
 		padding:30px;	
+		position:relative;
 	}
 	
 	&.display_bottom{
@@ -24,13 +25,29 @@
 		left:0;
 		width:100%;
 		height:100%;
-		
+
+		#AIPrivacy_wrapper{
+			max-width:600px;
+		}
 
 	}
 
 
+	//infos layer contenu
 	.aip_title{
 		font-size:1.2em;
+	}
+	.aip_acceptall{
+		border:1px solid #333;
+		padding:10px;
+		font-size:1.5em;
+		margin: 10px;
+
+	}
+	.aip_linktraceurs{
+		border:none;
+		cursor:pointer;
+		
 	}
 
 }

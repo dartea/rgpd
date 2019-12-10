@@ -17,7 +17,7 @@
         name : 'Art is privacy',
         logoUrl : '',
         language : 'fr',
-        privacyPolicyURL : '',
+        privacyPolicyURL : 'http://www.dartea.com',
         vendors: {},
         theme : {},
         position: 'middle'
