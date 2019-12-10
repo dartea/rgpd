@@ -1,15 +1,14 @@
 var artIsPrivacyTranslation = require('./translation.json'); //with path
+
 (function(){  //start closure
 
+    
     //config
-
-
     console.log(window.artIsPrivacySettings);
     
     //define language
     var language = typeof(artIsPrivacyTranslation[window.artIsPrivacySettings.language])!="undefined" ? window.artIsPrivacySettings.language : 'fr';
-    console.log(language);
-    //var language = typeof(window.artIsPrivacySettings.language!=
+    
 
     // --------
     // Affichage du layer d'infos
@@ -25,12 +24,14 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     document.getElementById("AIPrivacy").appendChild(inflayer_wrapper); 
 
 
+    ///contenu du layer d'infos
     var inflayerContent = '';
+    //inflayerContent += ;
     inflayerContent += artIsPrivacyTranslation[language].title.replace(/{name}/, window.artIsPrivacySettings.name); 
 
     document.getElementById("AIPrivacy_wrapper").innerHTML = inflayerContent;
 
-
+    
 
 
 })();//end closure
