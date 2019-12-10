@@ -10,20 +10,23 @@
   </head>
   <body>
     <h1>Art is privacy</h1>
-
+    
+    <a href="#" class="aip_linkcookie" >Paramétrer les cookies</a>
    
+
+   <?php //var_dump($_COOKIE["AIP_acceptall"]); ?>
    <script type="text/javascript">
     window.artIsPrivacySettings = {
         name : 'Art is privacy',
         logoUrl : '',
         language : 'fr',
         privacyPolicyURL : 'http://www.dartea.com',
-        position: 'middle',
-        vendors: {},
-        theme : {}
-        
+        position: 'bottom',
+        vendors:['site','ganalytics','matomo','addthis','disquss','facebook'],
+        theme : {}  
     };
   </script>
   <script src="/art-is-privacy.min.js" ></script>
+
   </body>
 </html>
