@@ -1,3 +1,4 @@
+//RUN with npm run build ou watch
 const path = require('path');
 
 module.exports = {
