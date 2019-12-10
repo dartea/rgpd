@@ -57,7 +57,7 @@ endif
 
     <!-- detect si le service est accepté -->
     <?php if($_COOKIE['AIP_setting_googleanalytics']==1 || !$_COOKIE['AIP_setting_googleanalytics']): ?>
-        //ici le code Google analytics
+        <!-- //ici le code Google analytics -->
     <?php endif; ?>
 
    <?php //var_dump($_COOKIE["AIP_acceptall"]); ?>
