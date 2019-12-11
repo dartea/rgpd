@@ -250,7 +250,7 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     function AIPrivacy_setCookieValue(name,value) {
         var expiryDate = new Date();
         expiryDate.setMonth(expiryDate.getMonth() + 13);
-        document.cookie = name+"="+value+"; expires="+expiryDate.toGMTString();
+        document.cookie = name+"="+value+"; path=/; expires="+expiryDate.toGMTString();
     }
 
 
