@@ -7,6 +7,13 @@
 	z-index:9999;
 	font-family:Arial;
 
+	-webkit-animation-name: AIP_fadeIn;
+  animation-name: AIP_fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
 
 	#AIPrivacy_wrapper{
 		background-color:#FFF;
@@ -103,3 +110,13 @@
 		cursor:pointer;
 	}
 }
+
+
+@-webkit-keyframes AIP_fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+@keyframes AIP_fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
+} 

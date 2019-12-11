@@ -11,7 +11,7 @@
   <body>
     <h1>Art is privacy</h1>
 
-    <a href="#" class="aip_linkcookie" >Paramétrer les cookies</a>
+  <a href="#" class="aip_linkcookie" >Paramétrer les cookies</a>    
    <div>
    <h2>Installation : </h2>
    Ajouter ce code avanrt la fermature du "body":
@@ -46,7 +46,7 @@
 
  verifier la presence du cookie  pour ajouter les js des sevices (ganalytics etc ...):
  <pre style="background-color:#dcd6d6; max-width:900px;padding:20px;">
-if($_COOKIE['AIP_setting_googleanalytics']==1 || !$_COOKIE['AIP_setting_googleanalytics']):
+if(!isset($_COOKIE['AIP_setting_googleanalytics']) || $_COOKIE['AIP_setting_googleanalytics']==1):
  ...  //ici le code js de ganalytics ou autre
 endif
 
@@ -56,7 +56,7 @@ endif
 
 
     <!-- detect si le service est accepté -->
-    <?php if($_COOKIE['AIP_setting_googleanalytics']==1 || !$_COOKIE['AIP_setting_googleanalytics']): ?>
+    <?php if(!isset($_COOKIE['AIP_setting_googleanalytics']) || $_COOKIE['AIP_setting_googleanalytics']==1 ): ?>
         <!-- //ici le code Google analytics -->
     <?php endif; ?>
 

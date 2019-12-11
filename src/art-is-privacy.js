@@ -4,7 +4,7 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
 
     
     //config
-    console.log(window.artIsPrivacySettings);
+   // console.log(window.artIsPrivacySettings);
 
 
     
@@ -222,13 +222,15 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     if(typeof(BtSettings)!='undefined'){
         BtSettings.onclick = function() { 
             AIPrivacy_showCookieSettings();
+            return false;
         }; 
     }
 
     //lien dans la page pour parametrer les cookie
     var LienSettings = document.getElementsByClassName( classLinkSettings )[0];
     if(typeof(LienSettings)!='undefined'){
-        LienSettings.onclick = function() { 
+        LienSettings.onclick = function(e) { 
+            e.preventDefault();
             AIPrivacy_showCookieSettings();
         }; 
     }
