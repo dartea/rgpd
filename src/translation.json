@@ -14,10 +14,10 @@
 		"vendor_matomo_title" : "<div class=\"aip_vendor_title\">Suivi de l'audience par Matomo :</div>",
 		"vendor_matomo_body" : "<div class=\"aip_vendor_body\">Le site {name} utilise le service Matomo pour suivre l'audience afin de nous aider à analyser les comportements des visiteurs, les sources de trafic et la popularité des contenus proposés.</div>",
 		
-		"vendor_addthis_title" : "<div class=\"aip_vendor_title\">Partage sur les réseaux sociaux </div>",
+		"vendor_addthis_title" : "<div class=\"aip_vendor_title\">Partage sur les réseaux sociaux  par AddThis</div>",
 		"vendor_addthis_body" : "<div class=\"aip_vendor_body\">le site {name} utilise le service AddThis pour afficher sur certaines pages du site des boutons de partage sur les réseaux sociaux. AddThis utilise des traceurs pour mesurer le nombre de partages des contenus.</div>",
 		
-		"vendor_sharethis_title" : "<div class=\"aip_vendor_title\">Partage sur les réseaux sociaux </div>",
+		"vendor_sharethis_title" : "<div class=\"aip_vendor_title\">Partage sur les réseaux sociaux  par ShareThis</div>",
 		"vendor_sharethis_body" : "<div class=\"aip_vendor_body\">le site {name} utilise le service ShareThis pour afficher sur certaines pages du site des boutons de partage sur les réseaux sociaux. ShareThis utilise des traceurs pour mesurer le nombre de partages des contenus.</div>",
 		
 		"vendor_disqus_title" : "<div class=\"aip_vendor_title\">Commentaires sur le site  </div>",
@@ -38,20 +38,20 @@
 		"acceptall" : "<button class=\"aip_acceptall\">I agree</button>",
 		"settings_title" : "<div class=\"aip_settingstitle\">Cookie settings for {name} and third-party services :</div>",
 	
-		"vendor_necessary_title" : "<div class=\"aip_vendor_title\">Traceurs nécessaires au fonctionnement du site :</div>",
-		"vendor_necessary_body" : "<div class=\"aip_vendor_body\">Le site {name} dépose un cookie de session nécessaire au fonctionnement et à la sécurité du site.<br>Les players vidéos des services tiers tel que Youtube, Vimeo, Dailymotion utilisés dans ce site, enregistrent des traceurs necessaires au visionage des vidéos sur leurs serveurs.<br>Vous pouvez consulter la politique de protection des données sur leur sites internet</div>",
+		"vendor_necessary_title" : "<div class=\"aip_vendor_title\">Strictly necessary cookies:</div>",
+		"vendor_necessary_body" : "<div class=\"aip_vendor_body\">{name} website uses a session cookie necessary to its functioning and safety..<br>{name} website display video players  like  Youtube, Vimeo, Dailymotion. They  use cookies to view videos on this website.</div>",
 		
-		"vendor_googleanalytics_title" : "<div class=\"aip_vendor_title\">Suivi de l'audience par Google analytics :</div>",
-		"vendor_googleanalytics_body" : "<div class=\"aip_vendor_body\">Le site {name} utilise le service Google Analytics pour suivre l'audience afin de nous aider à analyser les comportements des visiteurs, les sources de trafic et la popularité des contenus proposés.</div>",
+		"vendor_googleanalytics_title" : "<div class=\"aip_vendor_title\">Audience tracking by Google analytics :</div>",
+		"vendor_googleanalytics_body" : "<div class=\"aip_vendor_body\">{name} website uses Google Analytics’ services to track and analyze audience behavior, traffic sources and the popularity of the content provided.</div>",
 		
-		"vendor_matomo_title" : "<div class=\"aip_vendor_title\">Suivi de l'audience par Matomo :</div>",
-		"vendor_matomo_body" : "<div class=\"aip_vendor_body\">Le site {name} utilise le service Matomo pour suivre l'audience afin de nous aider à analyser les comportements des visiteurs, les sources de trafic et la popularité des contenus proposés.</div>",
+		"vendor_matomo_title" : "<div class=\"aip_vendor_title\">Audience tracking by Matomo :</div>",
+		"vendor_matomo_body" : "<div class=\"aip_vendor_body\">{name} website  uses  Matomo services to track and analyze audience behavior, traffic sources and the popularity of the content provided.</div>",
 		
-		"vendor_addthis_title" : "<div class=\"aip_vendor_title\">Partage sur les réseaux sociaux </div>",
-		"vendor_addthis_body" : "<div class=\"aip_vendor_body\">le site {name} utilise le service AddThis pour afficher sur certaines pages du site des boutons de partage sur les réseaux sociaux. AddThis utilise des traceurs pour mesurer le nombre de partages des contenus.</div>",
+		"vendor_addthis_title" : "<div class=\"aip_vendor_title\">Social media sharing by AddThis :</div>",
+		"vendor_addthis_body" : "<div class=\"aip_vendor_body\">{name} website  uses AddThis service to display social media sharing options on some pages of the website. AddThis uses cookies to measure the number of times the content provided has been shared.</div>",
 		
-		"vendor_sharethis_title" : "<div class=\"aip_vendor_title\">Partage sur les réseaux sociaux </div>",
-		"vendor_sharethis_body" : "<div class=\"aip_vendor_body\">le site {name} utilise le service ShareThis pour afficher sur certaines pages du site des boutons de partage sur les réseaux sociaux. ShareThis utilise des traceurs pour mesurer le nombre de partages des contenus.</div>",
+		"vendor_sharethis_title" : "<div class=\"aip_vendor_title\">Social media sharing by Sharethis : </div>",
+		"vendor_sharethis_body" : "<div class=\"aip_vendor_body\">{name} website  uses ShareThis service to display social media sharing options on some pages of the website. ShareThis uses cookies to measure the number of times the content provided has been shared.</div>",
 		
 		"vendor_disqus_title" : "<div class=\"aip_vendor_title\">Commentaires sur le site  </div>",
 		"vendor_disqus_body" : "<div class=\"aip_vendor_body\">le site {name} utilise le service Disqus pour les commentiares sur certains page du site. </div>",
