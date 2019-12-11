@@ -54,10 +54,30 @@ endif
  </pre>
  </div>
 
-
+<h3>Services acceptés</h3>
     <!-- detect si le service est accepté -->
     <?php if(!isset($_COOKIE['AIP_setting_googleanalytics']) || $_COOKIE['AIP_setting_googleanalytics']==1 ): ?>
-        <!-- //ici le code Google analytics -->
+        <div>Google analytics activé</div>
+    <?php endif; ?>
+
+      <?php if(!isset($_COOKIE['AIP_setting_matomo']) || $_COOKIE['AIP_setting_matomo']==1 ): ?>
+        <div>Matomo activé</div>
+    <?php endif; ?>
+
+       <?php if(!isset($_COOKIE['AIP_setting_addthis']) || $_COOKIE['AIP_setting_addthis']==1 ): ?>
+       <div> Addthis activé</div>
+    <?php endif; ?>
+
+     <?php if(!isset($_COOKIE['AIP_setting_sharethis']) || $_COOKIE['AIP_setting_sharethis']==1 ): ?>
+        <div>Sharethis activé</div>
+    <?php endif; ?>
+
+    <?php if(!isset($_COOKIE['AIP_setting_disqus']) || $_COOKIE['AIP_setting_disqus']==1 ): ?>
+        <div>Disqus activé</div>
+    <?php endif; ?>
+
+    <?php if(!isset($_COOKIE['AIP_setting_facebook']) || $_COOKIE['AIP_setting_facebook']==1 ): ?>
+        <div>Facebook activé</div>
     <?php endif; ?>
 
    <?php //var_dump($_COOKIE["AIP_acceptall"]); ?>
