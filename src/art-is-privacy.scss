@@ -20,7 +20,8 @@
 		padding:30px;	
 		position:relative;
 		max-height:90%;
-	overflow-y:auto;
+		overflow-y:auto;
+		font-size: .9em;
 	}
 	&.display_none{
 		display:none;
