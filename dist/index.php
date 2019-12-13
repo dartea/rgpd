@@ -36,10 +36,10 @@
           facebook : facebook pixel et autre...
          */
         classLinkSettings : 'aip_linkcookie',//class du lien pour ouvrire les parametres des cookies
-        theme : {}  
+        trads : {'fr':{'title':'un test'},'en':{}}   // voir fichier de traduction call:  console.log(artIsPrivacyTranslation);
     };
   </script>
-  <script src=\"//rgpd.art-is-code.net/art-is-privacy.min.js\" ></script>";
+  <script src=\"//rgpd.art-is-code.net/art-is-privacy.min.js\" defer></script>";
   echo htmlentities($code);
    ?>
  </pre>
@@ -98,10 +98,10 @@ endif
           facebook : facebook pixel et autre...
          */
         classLinkSettings : 'aip_linkcookie', //class du lien pour ouvrire les parametres des cookies
-        theme : {}  
+        trads : {'fr':{'title':'un test'}}   
     };
   </script>
-  <script src="/art-is-privacy.min.js" ></script>
+  <script src="/art-is-privacy.min.js" defer></script>
 
   </body>
 </html>

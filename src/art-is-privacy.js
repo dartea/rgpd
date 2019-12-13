@@ -30,6 +30,18 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
     document.getElementById("AIPrivacy").appendChild(inflayer_wrapper); 
 
     // --------
+    // Gestion des traductions
+    // --------
+    function AIPrivacy_trad(entity){
+
+        if(typeof(window.artIsPrivacySettings.trads)!='undefined' && typeof(window.artIsPrivacySettings.trads[language][entity])!='undefined'){
+            return window.artIsPrivacySettings.trads[language][entity];
+        }else{
+            return artIsPrivacyTranslation[language][entity];
+        }
+    }
+    
+    // --------
     // Affichage du layer d'infos
     // --------
     function AIPrivacy_showInfos(){
@@ -38,12 +50,12 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
         ///contenu du layer d'infos
         var inflayerContent = '';
         //inflayerContent += ;
-        inflayerContent += artIsPrivacyTranslation[language].title.replace(/{name}/, window.artIsPrivacySettings.name); 
-        inflayerContent += artIsPrivacyTranslation[language].body.replace(/{name}/, window.artIsPrivacySettings.name).replace(/{privacyPolicyURL}/, window.artIsPrivacySettings.privacyPolicyURL);
+        inflayerContent += AIPrivacy_trad('title').replace(/{name}/, window.artIsPrivacySettings.name); 
+        inflayerContent += AIPrivacy_trad('body').replace(/{name}/, window.artIsPrivacySettings.name).replace(/{privacyPolicyURL}/, window.artIsPrivacySettings.privacyPolicyURL);
         
         inflayerContent += '<div class="aip_buttons">';
-        inflayerContent += artIsPrivacyTranslation[language].linktraceurs;
-        inflayerContent += artIsPrivacyTranslation[language].acceptall;
+        inflayerContent += AIPrivacy_trad('linktraceurs');
+        inflayerContent += AIPrivacy_trad('acceptall');
         inflayerContent += '</div>';
 
         document.getElementById("AIPrivacy_wrapper").innerHTML = inflayerContent;
@@ -67,7 +79,7 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
         //var AIP_DIV = document.getElementById("AIPrivacy").
         var inflayerContent = '';
         //inflayerContent += ;
-        inflayerContent += artIsPrivacyTranslation[language].settings_title.replace(/{name}/, window.artIsPrivacySettings.name); 
+        inflayerContent += AIPrivacy_trad('settings_title').replace(/{name}/, window.artIsPrivacySettings.name); 
         //inflayerContent += artIsPrivacyTranslation[language].body.replace(/{name}/, window.artIsPrivacySettings.name).replace(/{privacyPolicyURL}/, window.artIsPrivacySettings.privacyPolicyURL);  
         
 
@@ -76,7 +88,7 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
         for(var i=0;i<vendors.length;i++) {
          inflayerContent += AIPrivacy_getVendor(vendors[i]);
         }
-        inflayerContent +='<button id="aip_saveCookieSettings">'+artIsPrivacyTranslation[language].savesettings+'</button>';
+        inflayerContent +='<button id="aip_saveCookieSettings">'+AIPrivacy_trad('savesettings')+'</button>';
         inflayerContent +='</div>';
         document.getElementById("AIPrivacy_wrapper").innerHTML = inflayerContent;
 
@@ -103,8 +115,8 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
 
             case 'necessary':
                 vendorinf += '<div class="aip_vendor_opt"><input type="checkbox" checked="" disabled="">';
-                vendorinf +=  artIsPrivacyTranslation[language].vendor_necessary_title.replace(/{name}/, window.artIsPrivacySettings.name);
-                vendorinf +=  artIsPrivacyTranslation[language].vendor_necessary_body.replace(/{name}/, window.artIsPrivacySettings.name); 
+                vendorinf +=  AIPrivacy_trad('vendor_necessary_title').replace(/{name}/, window.artIsPrivacySettings.name);
+                vendorinf +=  AIPrivacy_trad('vendor_necessary_body').replace(/{name}/, window.artIsPrivacySettings.name); 
                 vendorinf += '</div>';
             break;
 
@@ -112,16 +124,16 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
             case 'googleanalytics':
                 var checked = AIPrivacy_getCookieValue('AIP_setting_'+vendor) == 1 ? "checked" : '';
                 vendorinf += '<div class="aip_vendor_opt"><input type="checkbox" '+checked+' name="AIP_setting_'+vendor+'">';
-                vendorinf +=  artIsPrivacyTranslation[language].vendor_googleanalytics_title.replace(/{name}/, window.artIsPrivacySettings.name);
-                vendorinf +=  artIsPrivacyTranslation[language].vendor_googleanalytics_body.replace(/{name}/, window.artIsPrivacySettings.name); 
+                vendorinf +=  AIPrivacy_trad('vendor_googleanalytics_title').replace(/{name}/, window.artIsPrivacySettings.name);
+                vendorinf +=  AIPrivacy_trad('vendor_googleanalytics_body').replace(/{name}/, window.artIsPrivacySettings.name); 
                 vendorinf += '</div>';
             break;
 
             case 'matomo':
                 var checked = AIPrivacy_getCookieValue('AIP_setting_'+vendor) == 1 ? "checked" : '';
                 vendorinf += '<div class="aip_vendor_opt"><input type="checkbox" '+checked+'  name="AIP_setting_'+vendor+'">';
-                vendorinf +=  artIsPrivacyTranslation[language].vendor_matomo_title.replace(/{name}/, window.artIsPrivacySettings.name);
-                vendorinf +=  artIsPrivacyTranslation[language].vendor_matomo_body.replace(/{name}/, window.artIsPrivacySettings.name); 
+                vendorinf +=  AIPrivacy_trad('vendor_matomo_title').replace(/{name}/, window.artIsPrivacySettings.name);
+                vendorinf +=  AIPrivacy_trad('vendor_matomo_body').replace(/{name}/, window.artIsPrivacySettings.name); 
                 vendorinf += '</div>';
             break;
 
@@ -129,16 +141,16 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
             case 'addthis':
                 var checked = AIPrivacy_getCookieValue('AIP_setting_'+vendor) == 1 ? "checked" : '';
                 vendorinf += '<div class="aip_vendor_opt"><input type="checkbox" '+checked+'  name="AIP_setting_'+vendor+'">';
-                vendorinf +=  artIsPrivacyTranslation[language].vendor_addthis_title.replace(/{name}/, window.artIsPrivacySettings.name);
-                vendorinf +=  artIsPrivacyTranslation[language].vendor_addthis_body.replace(/{name}/, window.artIsPrivacySettings.name); 
+                vendorinf +=  AIPrivacy_trad('vendor_addthis_title').replace(/{name}/, window.artIsPrivacySettings.name);
+                vendorinf +=  AIPrivacy_trad('vendor_addthis_body').replace(/{name}/, window.artIsPrivacySettings.name); 
                 vendorinf += '</div>';
             break;
 
             case 'sharethis':
                 var checked = AIPrivacy_getCookieValue('AIP_setting_'+vendor) == 1 ? "checked" : '';
                 vendorinf += '<div class="aip_vendor_opt"><input type="checkbox" '+checked+'  name="AIP_setting_'+vendor+'">';
-                vendorinf +=  artIsPrivacyTranslation[language].vendor_sharethis_title.replace(/{name}/, window.artIsPrivacySettings.name);
-                vendorinf +=  artIsPrivacyTranslation[language].vendor_sharethis_body.replace(/{name}/, window.artIsPrivacySettings.name); 
+                vendorinf +=  AIPrivacy_trad('vendor_sharethis_title').replace(/{name}/, window.artIsPrivacySettings.name);
+                vendorinf +=  AIPrivacy_trad('vendor_sharethis_body').replace(/{name}/, window.artIsPrivacySettings.name); 
                 vendorinf += '</div>';
             break;
 
@@ -146,8 +158,8 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
             case 'disqus':
                 var checked = AIPrivacy_getCookieValue('AIP_setting_'+vendor) == 1 ? "checked" : '';
                 vendorinf += '<div class="aip_vendor_opt"><input type="checkbox" '+checked+'  name="AIP_setting_'+vendor+'">';
-                vendorinf +=  artIsPrivacyTranslation[language].vendor_disqus_title.replace(/{name}/, window.artIsPrivacySettings.name);
-                vendorinf +=  artIsPrivacyTranslation[language].vendor_disqus_body.replace(/{name}/, window.artIsPrivacySettings.name); 
+                vendorinf +=  AIPrivacy_trad('vendor_disqus_title').replace(/{name}/, window.artIsPrivacySettings.name);
+                vendorinf +=  AIPrivacy_trad('vendor_disqus_body').replace(/{name}/, window.artIsPrivacySettings.name); 
                 vendorinf += '</div>';
             break;
 
@@ -155,8 +167,8 @@ var artIsPrivacyTranslation = require('./translation.json'); //with path
             case 'facebook':
                 var checked = AIPrivacy_getCookieValue('AIP_setting_'+vendor) == 1 ? "checked" : '';
                 vendorinf += '<div class="aip_vendor_opt"><input type="checkbox" '+checked+'  name="AIP_setting_'+vendor+'">';
-                vendorinf +=  artIsPrivacyTranslation[language].vendor_facebook_title.replace(/{name}/, window.artIsPrivacySettings.name);
-                vendorinf +=  artIsPrivacyTranslation[language].vendor_facebook_body.replace(/{name}/, window.artIsPrivacySettings.name); 
+                vendorinf +=  AIPrivacy_trad('vendor_facebook_title').replace(/{name}/, window.artIsPrivacySettings.name);
+                vendorinf +=  AIPrivacy_trad('vendor_facebook_body').replace(/{name}/, window.artIsPrivacySettings.name); 
                 vendorinf += '</div>';
             break;
 
