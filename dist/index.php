@@ -39,7 +39,7 @@
         trads : {'fr':{'title':'un test'},'en':{}}   // voir fichier de traduction call:  console.log(artIsPrivacyTranslation);
     };
   </script>
-  <script src=\"//your-domain.com/art-is-privacy.min.js\" defer></script>";
+  <script src=\"art-is-privacy.min.js\" defer></script>";
   echo htmlentities($code);
    ?>
  </pre>
