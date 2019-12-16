@@ -14,7 +14,7 @@
   <a href="#" class="aip_linkcookie" >Paramétrer les cookies</a>    
    <div>
    <h2>Installation : </h2>
-   Ajouter ce code avanrt la fermature du "body":
+   Ajouter ce code avant la fermature du "body":
 
 
 <pre style="background-color:#dcd6d6; max-width:900px;padding:20px;">
